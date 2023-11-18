@@ -8,5 +8,3 @@ links.forEach(link => {
         console.log(href, text);
     });
 });
-
-window.scrollTo(0, document.body.scrollHeight);

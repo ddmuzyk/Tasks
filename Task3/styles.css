@@ -18,10 +18,23 @@ body {
   font-family: 'Gotham', sans-serif;
 }
 
+p {
+  width: fit-content;
+  color: white;
+  font-size: 22px;
+  margin: 0;
+}
+
 .header-content {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.menu {
+  width: 50px;
+  display: none;
+  cursor: pointer;
 }
 
 .logo {
@@ -47,6 +60,7 @@ body {
 
 .phone-number {
   font-size: 18px;
+  color: black;
   height: fit-content;
   margin: 0 0 0 5px;
   position: relative;
@@ -103,17 +117,37 @@ footer {
 }
 
 .footer-content {
+  height: 100%;
   display: flex;
+  align-items: center;  
   gap: 50px;
+  margin-left: 8%;
 }
 
-p {
-  width: fit-content;
-  color: white;
-  font-size: 22px;
+hr {
   margin: 0;
+  border: 1px gray solid;
 }
 
 @media screen and (max-width: 1008px) {
-  
+  .contact {
+    display: none;
+  }
+
+  .header-content {
+    justify-content: space-between;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    margin-right: 30px;
+  }
+
+  .company-name {
+    font-size: 22px;
+  }
 }
