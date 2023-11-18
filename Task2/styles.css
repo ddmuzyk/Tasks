@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,22 +10,42 @@ body {
 
 .table-container {
   margin: 20px;
+  /* UI Properties */
+  border-radius: 5px 5px 0px 0px;
+  opacity: 1;
 }
 
 .table-row {
   display: grid;
-  height: 30px;
+  height: 50px;
   grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  justify-items: var(20px);
 }
 
-.cell {
+.table-row:last-of-type {
+  border-radius: 0px 0px 5px 5px;
+
+}
+
+.table-row div {
+  padding: 10px;
+}
+
+.quantity {
+  justify-self: center;
+}
+
+/* .cell {
   display: flex;
   align-items: center;
-}
+} */
 
 #header {
   background-color: black;
   color: white;
+  border-radius: 5px 5px 0px 0px;
+  font-weight: bold;
 }
 
 .white-bc {
