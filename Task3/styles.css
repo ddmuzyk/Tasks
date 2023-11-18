@@ -1,0 +1,46 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Gotham', sans-serif;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 90px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 120px;
+  width: fit-content;
+}
+
+.company-name {
+  margin: 0;
+}
+
+.contact {
+  display: flex;
+  height: 28px;
+}
+
+.phone-number {
+  font-size: 18px;
+  height: fit-content;
+  margin: 0 0 0 5px;
+  position: relative;
+  top: 4px;
+}
