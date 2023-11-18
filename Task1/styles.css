@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .cards-container {
@@ -18,17 +19,31 @@ body {
   opacity: 1;
 }
 
-.card-content {
+.card-content-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-img {
+.card-img {
   width: 100%;
   border-radius: 10px 10px 0 0;
   height: 320px;
   object-fit: cover;
+}
+
+li {
+  /* display: flex; */
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  font-style: bold;
+  color: black;
 }
 
 h2 {
@@ -36,4 +51,43 @@ h2 {
   color: #FF6200;
   font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-content {
+  display: flex;
+  height: 24px;
+  position: relative;
+}
+
+#mobile::after {
+  content: "+45 87 65 43 21";
+  height: fit-content;
+  width: max-content;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  top: 2px;
+  left: 40px;
+}
+
+#mail::after {
+  content: "jkj@fictionalcompany.dk";
+  height: fit-content;
+  width: max-content;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  top: 1px;
+  left: 40px;
+}
+
+#building::after {
+  content: "Fiktion Vej 78, 9500 Aalborg";
+  height: fit-content;
+  width: max-content;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  top: 1px;
+  left: 40px;
 }
