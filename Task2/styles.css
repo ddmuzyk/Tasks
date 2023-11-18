@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.table-container {
+  margin: 20px;
+}
+
+.table-row {
+  display: grid;
+  height: 30px;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+}
+
+#header {
+  background-color: black;
+  color: white;
+}
+
+.white-bc {
+  background-color: white;
+}
+
+.grey-bc {
+  background-color: #EEEEEE;
+}
