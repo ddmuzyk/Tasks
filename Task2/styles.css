@@ -13,33 +13,33 @@ body {
   /* UI Properties */
   border-radius: 5px 5px 0px 0px;
   opacity: 1;
+  max-width: 1747px;
 }
 
 .table-row {
   display: grid;
   height: 50px;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 2fr 1fr 0.5fr;
+  gap: 10px;
   align-items: center;
   justify-items: var(20px);
 }
 
 .table-row:last-of-type {
   border-radius: 0px 0px 5px 5px;
-
 }
 
 .table-row div {
   padding: 10px;
 }
 
-.quantity {
+.center {
   justify-self: center;
 }
 
-/* .cell {
-  display: flex;
-  align-items: center;
-} */
+.right {
+  justify-self:flex-end;
+}
 
 #header {
   background-color: black;
@@ -54,4 +54,14 @@ body {
 
 .grey-bc {
   background-color: #EEEEEE;
+}
+
+.mobile-view {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .table-row {
+    height: fit-content;
+  }
 }
