@@ -14,6 +14,7 @@ body {
   border-radius: 5px 5px 0px 0px;
   opacity: 1;
   max-width: 1747px;
+  display: grid;
 }
 
 .table-row {
@@ -56,12 +57,48 @@ body {
   background-color: #EEEEEE;
 }
 
-.mobile-view {
-  display: none;
+.bold {
+  font-weight: bold;
 }
 
-@media screen and (max-width: 600px) {
+.mobile-table-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+.table-cell {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  padding: 7px 10px;
+  gap: 30px;
+}
+
+@media screen and (max-width: 757px) {
   .table-row {
     height: fit-content;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .table-container {
+    display: none;
+  }
+
+  .mobile-table-container {
+    display: flex;
   }
 }
