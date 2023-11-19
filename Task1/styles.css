@@ -1,5 +1,3 @@
-
-
 html {
   height: 100%;
   box-sizing: border-box;
@@ -45,7 +43,6 @@ body {
 }
 
 li {
-  /* display: flex; */
   list-style: none;
   margin-bottom: 10px;
 }

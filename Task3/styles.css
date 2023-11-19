@@ -116,7 +116,6 @@ aside {
   height: var(--content-height);
   width: 320px;
   background-color: var(--sidebar-color);
-  /* margin-left: 40px; */
 }
 
 section {
