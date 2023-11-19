@@ -1,4 +1,3 @@
-const links = document.querySelectorAll('a');
 const linkWrappers = document.querySelectorAll('.link');
 const menuBtn = document.querySelector('.menu');
 const nav = document.querySelector('nav');
