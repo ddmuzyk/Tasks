@@ -5,6 +5,7 @@
   --hero-img-color: #BE4D4D;
   --footer-color: #333333;
   --header-color: #FFFFFF;
+  --nav-hover-color: #333333;
 }
 
 html {
@@ -97,6 +98,10 @@ a {
   font-size: 22px;
 }
 
+a:hover {
+  color: gray;
+}
+
 .hero-image {
   height: 546px;
   background-color: var(--hero-img-color);
@@ -108,7 +113,7 @@ a {
 }
 
 aside {
-  height: 1196px;
+  height: var(--content-height);
   width: 320px;
   background-color: var(--sidebar-color);
   /* margin-left: 40px; */
@@ -221,7 +226,7 @@ hr {
   }
 
   nav div:hover {
-    background-color: #333333;
+    background-color: var(--nav-hover-color);
   }
 
   nav:last-child {
