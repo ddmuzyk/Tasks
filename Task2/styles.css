@@ -10,10 +10,8 @@ body {
 
 .table-container {
   margin: 20px;
-  /* UI Properties */
   border-radius: 5px 5px 0px 0px;
   opacity: 1;
-  max-width: 1747px;
   display: grid;
 }
 
@@ -39,7 +37,7 @@ body {
 }
 
 .right {
-  justify-self:flex-end;
+  justify-self: lex-end;
 }
 
 #header {

@@ -84,7 +84,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
   gap: 30px;
-  transition: all 0.5s;
+  transition: left 0.5s;
 }
 
 nav:last-child {
@@ -132,6 +132,10 @@ footer {
   align-items: center;  
   gap: 50px;
   margin-left: 8%;
+}
+
+.footer-content p {
+  cursor: pointer;
 }
 
 hr {
